@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="4dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    card_view:cardMaxElevation="5dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="false"
+    android:clickable="true">
+
+        <LinearLayout
+            xmlns:app="http://schemas.android.com/tools"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <ImageView
+                android:src="@drawable/common_ic_googleplayservices"
+                android:layout_weight="7"
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="2dp" />
+
+            <LinearLayout
+                android:padding="2dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="9"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+
+                <com.daniribalbert.customfontlib.views.CustomFontTextView
+                    app:font="Roboto-Light"
+                    android:layout_weight="3.99"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Music Cloud 2"
+                    android:id="@+id/tit" />
+
+
+
+                <com.daniribalbert.customfontlib.views.CustomFontTextView
+                    app:font="CaviarDreams"
+                    android:layout_weight="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Free Music play and stream"
+                    android:id="@+id/desc" />
+
+                <LinearLayout
+                    android:layout_marginTop="3.5dp"
+                    android:layout_marginBottom="3.5dp"
+                    android:background="@color/grey_300"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"></LinearLayout>
+
+
+                <com.daniribalbert.customfontlib.views.CustomFontTextView
+                    app:font="CaviarDreams"
+                    android:textColor="@color/green_600"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/coins"
+                    android:layout_weight="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    +2 Coins"
+                    android:id="@+id/coins" />
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
